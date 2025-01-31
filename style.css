@@ -1,0 +1,32 @@
+.fcontainer{
+    display: flex;
+    border: 3px solid grey;
+    height: 45vh;
+    flex-direction: column-reverse;
+    font-size: 40px;
+
+    justify-content:center;
+
+    align-items: center;
+
+    /* flex-wrap: wrap-reverse; */
+
+    text-align: center;
+}
+.fitem{
+    background-color: red;
+    border: 3px solid black;
+    height: 122px;
+    margin: 15px;
+    width: 122px;
+
+}
+.item1{
+    order: 3;
+    flex-grow: 3;
+    flex-shrink: 2;
+}
+.item4{
+    order: 4;
+    flex-grow: 2;
+}
