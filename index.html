@@ -1,112 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Task</title>
     <style>
-        body{
-            background-color: aquamarine;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            
         }
-        h2{
-            color: blue;
+
+        .navbar {
+            background-color: #28a745;
+            height: 100px;
+            padding: 1rem;
+            color: white;
+            text-align: center; 
+        }
+
+        .navbar h1 {
+            margin: 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 2rem;
+            justify-content: center;
+        }
+
+        .content .card:nth-child(3) {
+            grid-column: span 2;
+            justify-self: center;
+        }
+
+        .card1,.card2,.card3 {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 510px;
+            height: 100px;
+            
+        }
+        .card3{
+            justify-self:right;
+        }
+        
+
+        .card1 h2, .card2 h2, .card3 h2 {
+            color: #28a745;
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
             text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
         }
-        p{
-            font-family:'Times New Roman', Times, serif;
-            font-size: 30px;
-        }   
+
+        footer a {
+            color: #28a745;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        footer {
+            text-align: center;
+            
+            color: white;
+            padding: 15px;
+            margin-top: auto;
+        }
     </style>
-    <title> Form</title>
 </head>
 <body>
-    <h2> Registration Form</h2>
-    <form action=" htp.html" method="post">
-        <label for="name" >FIRST Name:  </label>
-        <input type="text"  id="name" name="name" placeholder="first name" required>
+    <div class="navbar">
+        <h1>Welcome to Your Website Task</h1>
         <br>
-        
-        <label for="LAST_NAME">LAST NAME :</label>
-        <input type="text" id="LAST_NAME" name="LAST_NAME" placeholder="last name"required>
         <br>
-        
-        <label for="email">EMAIL:</label>
-        <input type="email" id="email" name="email" placeholder="email"  required>
-        <br>
-        <label for="pwd">Paasword:</label>
-        <input type="password" id="pwd" name="pwd" placeholder="password" required>
-        <br>
-        <label for="dob">DOB:</label>
-        <input type="date" id="dob" name="dob" placeholder="dob"   required>
-        <br>
-        
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-    </form>
 
-    
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Asperiores fugiat voluptas, doloremque explicabo culpa amet
-        cum voluptatibus maiores odio quas sit error quaerat unde, animi consequatur accusamus similique illo nulla!</p>
-       <img src="Screenshot 2024-07-29 155059.png"width="400" height="200" alt="class">
-       <br>
-       <a href="https://www.google.com" title="image">google</a>
-       <br>
-       <abbr title="Hyper Text Mrkup lng">html</abbr>
-       <h2>unorderd Lists</h2>
-        <h3>Things it contains:</h3>
         <ul>
-          <li>cat</li>
-          <li>pointers</li>
-          <li>sdfghjkl</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
+    </div>
 
-        <ol>
-            <li>sdfghjk</li>
-            <li>wertyuio</li>
-            <li>othzxcvbnmts</li>
-          </ol>
+    <div class="content">
+        <div class="card1">
+            <h2>About CSS</h2>
+            <p>Cascading Style Sheets (CSS) allow you to style and layout your web pages, adding colors, spacing, and more.</p>
+        </div>
 
+        
 
-              <h2>HTML List Example</h2>
-                  <h3>ordered list(OL)</h3>
-                  <ol>
-                      <li>wake up</li>
-                      <li>Brush your Teeth</li>
-                      <li>Eat Breakfast</li>
-                      <li>Go to work</li>
-                  </ol>
-          
-                  <h3>unordered list(uL)</h3>
-                  <ul>
-                      <li>wake up</li>
-                      <li>Brush your Teeth</li>
-                      <li>Eat Breakfast</li>
-                      <li>Go to work</li>
-                  </ul>
-          
-                  <h3>Nested List (OL AND UL COMBINES)</h3>
-                  <ol>
-                      <li>wake up</li>
-                      <ul>
-                          <li type="square">wake up</li>
-                          <li type="square">Brush your Teeth</li>
-                          <li type="square">Eat Breakfast</li>
-                          <li type="square">Go to work</li>
-                      </ul>
-                      <li>Brush your Teeth</li>
-                      <li>Eat Breakfast</li>
-                      <li>Go to work</li>
-                  </ol>
-                  <h3>Definition List (DL)</h3>
-          
-                  <dt>HTML </dt>
-                  <dd>Hyper text markup lasagn</dd>
-                  <dt>CSS</dt>
-                  <dd>CASCADING STYLE SHEET </dd>
-                  <dt>JAVASCRIPT</dt>
-                  <dd>PROGRAMING LANG </dd>
-          
-                 
+        <div class="card3">
+            <h2>Box Model</h2>
+            <p>The CSS box model describes the rectangular boxes generated for elements. It includes margins, borders, padding, and the actual content.</p>
+        </div>
+
+        <div class="card2">
+            <h2>Responsive Design</h2>
+            <p>Responsive design ensures your webpage looks great on all devices, from desktops to mobile phones.</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
     
-          
-
-
+    <footer>
+        <p> Created by Ramish    |    Follow us on <a href="a" style="color: green;">  Instagram  </a> | <a href="a" style="color: green;">  Twitter  </a> | <a href="a" style="color: green;">  Linkedln  </a></p>
+    </footer>
 </body>
 </html>
