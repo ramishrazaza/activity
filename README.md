@@ -1,5 +1,11 @@
-This Is a class Activity of HTML CSS.
-View This Page at: 
-<a href="(https://ramishrazaza.github.io/activity/)">
+# Class Activity
 
-![Screenshot 2025-02-08 110145](https://github.com/user-attachments/assets/d790f7f1-b960-40f9-863f-08d7a3a9c7e0)
+This is an HTML & CSS activity page designed for learning and practice.
+
+## View Activity
+
+Click the link below to view the live activity page:
+
+[View Activity](https://ramishrazaza.github.io/activity/)
+
+![image](https://github.com/user-attachments/assets/25b51bb4-ee7a-4705-83db-7a06199f9cd5)
